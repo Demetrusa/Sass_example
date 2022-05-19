@@ -1,17 +1,54 @@
-$bgcolor: blue;
+@import "reset";
+
+
+$bgcolor-1: blue;
 $textcolor: white;
+$textColor: black;
+$hoverColor: green;
 $font-size: 25px;
+$navFont-size: 20px;
+$myWidth: 500px;
+$center: center;
+
 
 
 .header-wrap {
     position: relative;
-    background-color: $bgcolor;
+    background-color: $bgcolor-1;
 }
 
 .header-wrapper{
     margin: 0 auto;
-    max-width: 500px;
+    max-width: $myWidth;
     background-color: black;
     color: $textcolor;
     font-size: $font-size;
+    text-align: $center;
+}
+nav {
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style:none;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: $textColor;
+        font-size: $navFont-size;
+
+    }
+    
+}
+a:hover {
+    color: $hoverColor;
+    
+}
+.navigate{
+    display: flex;
+    justify-content: $centerText;
 }
