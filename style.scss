@@ -1,0 +1,17 @@
+$bgcolor: blue;
+$textcolor: white;
+$font-size: 25px;
+
+
+.header-wrap {
+    position: relative;
+    background-color: $bgcolor;
+}
+
+.header-wrapper{
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: black;
+    color: $textcolor;
+    font-size: $font-size;
+}
